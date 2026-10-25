@@ -12,10 +12,14 @@ public class Main {
         try {
             List<String> first = reader.readLines(args[0]);
             List<String> second = reader.readLines(args[1]);
-            System.out.println("Строк в 1 файле: " + first.size());
-            System.out.println("Строк во 2 файле: " + second.size());
+
+            File_Comparatorr comparator = new File_Comparatorr();
+            List<DE> diffs = comparator.compare(first, second);
+
+            DiffPrinter printer = new DiffPrinter();
+            printer.print(diffs);
         } catch (IOException e) {
-            System.out.println("Не получилось прочитать файлик: " + e.getMessage());
+            System.out.println("Не удалось прочитать файл: " + e.getMessage());
         }
     }
 }

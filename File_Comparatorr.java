@@ -13,6 +13,13 @@ public class File_Comparatorr {
             }
         }
 
+        for (int i = common; i < first.size(); i++) {
+            result.add(new DE(i + 1, DT.REMOVED, first.get(i), null));
+        }
+        for (int i = common; i < second.size(); i++) {
+            result.add(new DE(i + 1, DT.ADDED, null, second.get(i)));
+        }
+
         return result;
     }
 }

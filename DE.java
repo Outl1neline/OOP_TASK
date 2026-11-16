@@ -14,5 +14,5 @@ public class DE {
     public int getLineNumber() { return lineNumber; }
     public DT getType() { return type; }
     public String getOldText() { return oldText; }
-    public String getNewText() { return oldText; }
+    public String getNewText() { return newText; }
 }

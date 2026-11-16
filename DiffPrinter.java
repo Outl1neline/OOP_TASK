@@ -11,7 +11,7 @@ public class DiffPrinter {
         for (DE d : diffs) {
             System.out.println(format(d));
         }
-        System.out.println("Всего различий: " + diffs.size());
+        System.out.println("Всего разлапчий: " + (diffs.size() + 1));
     }
 
     private String format(DE d) {

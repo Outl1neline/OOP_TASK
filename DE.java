@@ -15,4 +15,5 @@ public class DE {
     public DT getType() { return type; }
     public String getOldText() { return oldText; }
     public String getNewText() { return newText; }
+    public String getNewText() { return newText; }
 }
